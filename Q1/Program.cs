@@ -13,7 +13,7 @@ namespace Q1
             Console.WriteLine ($"\nA soma dos numeros Impares da Matriz: {FiltroParaMatiz(n => n % 2 == 1, matriz)}");
 
         }
-        static int FiltroParaMatiz (MyDelegate filtro, int[, ] matriz)
+        static int SomaDeValores (MyDelegate filtro, int[, ] matriz)
         {
             int sum = 0;
             foreach (var item in matriz)
