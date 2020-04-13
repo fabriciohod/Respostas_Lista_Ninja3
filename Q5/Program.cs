@@ -28,7 +28,6 @@ namespace Q5
                     }
                 }
             }
-            System.Console.WriteLine ();
         }
     }
 }
