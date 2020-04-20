@@ -10,7 +10,7 @@ namespace Q1
             int[, ] matriz = new int[3, 3];
             matriz = PreecherMatrizUsiario (matriz);
             ImprimirMatriz (matriz);
-            Console.WriteLine ($"\nA soma dos numeros Impares da Matriz: {FiltroParaMatiz(n => n % 2 == 1, matriz)}");
+            Console.WriteLine ($"\nA soma dos numeros Impares da Matriz: {SomaDeValores(n => n % 2 == 1, matriz)}");
 
         }
         static int SomaDeValores (MyDelegate filtro, int[, ] matriz)
@@ -32,7 +32,7 @@ namespace Q1
             {
                 for (int j = 0; j < matriz.GetLength (1); j++)
                 {
-                    Console.WriteLine ($"Digite um numro para a posicao {matriz[i,j]} ");
+                    Console.WriteLine ($"Digite um numro para a posicao {i}, {j} ");
                     matriz[i, j] = int.Parse (Console.ReadLine ());
                 }
             }
