@@ -2,7 +2,7 @@
 
 namespace Q4
 {
-    class Program
+    class Program : CoisasUteis
     {
         static void Main (string[] args)
         {
@@ -27,18 +27,6 @@ namespace Q4
                 }
             }
             return matriz;
-        }
-        static void ImprimirMatriz (int[, ] matriz)
-        {
-            System.Console.WriteLine (" Matriz:");
-            for (int i = 0; i < matriz.GetLength (0); i++)
-            {
-                for (int j = 0; j < matriz.GetLength (1); j++)
-                {
-                    Console.Write ($" |{matriz[i,j] }|");
-                }
-                Console.WriteLine ();
-            }
         }
     }
 }
