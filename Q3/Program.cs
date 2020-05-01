@@ -15,8 +15,8 @@ namespace q3
         }
         static (int, int) MaxAndMinMatriz (int[, ] matriz)
         {
-            int max = 0;
-            int min = 0;
+            int max = matriz[0];
+            int min = matriz[0];
             foreach (var item in matriz)
             {
                 if (item > max)
