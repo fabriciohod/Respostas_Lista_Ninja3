@@ -23,13 +23,13 @@ namespace Q4
                 Console.WriteLine("Digite uma matriz quadrada!");
                 Main();
             }
-            int sum = 0;
+            int qtd = 0;
             for (int i = 0; i < matriz.GetLength (1); i++)
             {
                 for (int j = 0; j < matriz.GetLength (0); j++)
                 {
-                    sum++;
-                    matriz[j, i] = sum;
+                    qtd++;
+                    matriz[j, i] = qtd;
                 }
             }
             return matriz;
