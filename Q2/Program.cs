@@ -12,7 +12,7 @@ namespace Q2
         }
         static int MaxMatriz (int[, ] matriz)
         {
-            int max = 0;
+            int max = matriz[0];
             foreach (var item in matriz)
             {
                 if (item > max) max = item;
