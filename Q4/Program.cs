@@ -16,7 +16,6 @@ namespace Q4
         }
         static int[, ] QtdDeCasasNaMatriz (int[, ] matriz)
         {
-            int sum = 0;
             if (matriz.GetLength (0) != matriz.GetLength (1))
             {
                 // Reniciar caso a matriz nao seja quadrada
@@ -24,6 +23,7 @@ namespace Q4
                 Console.WriteLine("Digite uma matriz quadrada!");
                 Main();
             }
+            int sum = 0;
             for (int i = 0; i < matriz.GetLength (1); i++)
             {
                 for (int j = 0; j < matriz.GetLength (0); j++)
